@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation System</title>
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+<body>
+
+    <form id="hotel-search-form">
+        <label id="radius-label" for="radius">Enter radius in km:</label>
+        <div class="searchbox-wrapper">
+            <input type="number" id="radius-input" name="radius" required>
+            <button id="search-button" type="button" onclick="getUserLocation()">Search</button>
+        </div>
+    </form>
+
+    <div id="location"></div>
+    <section id="results"></section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

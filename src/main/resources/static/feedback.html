@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Feedback</title>
+    <link rel="stylesheet" href="css/hotel_feedback.css">
+</head>
+<body>
+    <h1>Submit Feedback</h1>
+    <form id="feedback-form">
+        <input type="hidden" id="hotel-id" name="hotelId">
+        <label for="service-rating">Service Rating (1-5):</label>
+        <input type="number" id="service-rating" min="1" max="5" required><br>
+
+        <label for="cleanliness-rating">Cleanliness Rating (1-5):</label>
+        <input type="number" id="cleanliness-rating" min="1" max="5" required><br>
+
+        <label for="food-rating">Food Rating (1-5):</label>
+        <input type="number" id="food-rating" min="1" max="5" required><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" rows="4" cols="50"></textarea><br>
+
+        <button type="button" onclick="submitFeedback()">Submit</button>
+    </form>
+
+    <h1>Hotel Feedback</h1>
+    <div id="feedback-list"></div>
+
+    <script src="js/hotel_feedback.js"></script>
+</body>
+</html>
